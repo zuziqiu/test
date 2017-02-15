@@ -171,7 +171,7 @@
 	    		methods:{
 	    			getAddressList:function(){
 	    				var _this = this;
-	    				this.$http.get("120.77.145.4:8080/address.json").then(function(response){
+	    				this.$http.get("data/address.json").then(function(response){
 	    					var res = response.data;
 	    					if(res.status==0){
 	    						_this.addressList = res.result;
