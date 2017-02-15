@@ -10,6 +10,11 @@
 	    <link href="css/base2.css" rel="stylesheet" >
 	    <link href="css/checkout.css" rel="stylesheet" >
 	    <link rel="stylesheet" href="css/modal.css" />
+	    <style type="text/css">
+	    [v-cloak] {
+			display: none;
+		}
+	    </style>
 	</head>
 	<body class="checkout">
 		<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -37,7 +42,7 @@
 	        </defs>
 	    </svg>
 	    
-	    <div class="container">
+	    <div class="container" v-cloak>
 	    	<div class="checkout-addr">
 	    		<!-- process step -->
 		    	<div class="check-step">
