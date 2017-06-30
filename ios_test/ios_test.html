@@ -19,8 +19,8 @@
 		}
 	</style>
 <body>
-	<div class="close"></div>
-	<div class="x_close"></div>
+<!-- 	<div class="close"></div>
+	<div class="x_close"></div> -->
 	<!-- <script type="text/javascript" src="js/zepto.min.js"></script> -->
 	<script type="text/javascript">
 		/* Zepto v1.2.0 - zepto event ajax form ie - zeptojs.com/license */
@@ -28,6 +28,8 @@
 	</script>
 	<script type="text/javascript">
 		$(function(){
+			$("body").append(`	<div class="close"></div>
+	<div class="x_close"></div>`)
 			$("body").on("touchend", ".close", function(){
 				alert(("0123"))
 			})
